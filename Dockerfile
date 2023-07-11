@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-LABEL MAINTAINER="Robin Genz <mail@robingenz.dev>"
+LABEL MAINTAINER="LE VAN THANH <lethanh9398@gmail.com>"
 
 ARG JAVA_VERSION=11
 ARG NODEJS_VERSION=16
@@ -11,7 +11,7 @@ ARG ANDROID_BUILD_TOOLS_VERSION=33.0.0
 # See https://developer.android.com/studio/releases/platforms
 ARG ANDROID_PLATFORMS_VERSION=32
 # See https://gradle.org/releases/
-ARG GRADLE_VERSION=7.4.2
+# ARG GRADLE_VERSION=7.4.2
 # See https://www.npmjs.com/package/@ionic/cli
 ARG IONIC_VERSION=6.20.8
 # See https://www.npmjs.com/package/@capacitor/cli
@@ -42,12 +42,12 @@ RUN apt-get install -qy \
 # Set locale
 RUN locale-gen en_US.UTF-8 && update-locale
 
-# Install Gradle
-ENV GRADLE_HOME=/opt/gradle
-RUN mkdir $GRADLE_HOME \
-    && curl -sL https://downloads.gradle-dn.com/distributions/gradle-${GRADLE_VERSION}-bin.zip -o gradle-${GRADLE_VERSION}-bin.zip \
-    && unzip -d $GRADLE_HOME gradle-${GRADLE_VERSION}-bin.zip
-ENV PATH=$PATH:/opt/gradle/gradle-${GRADLE_VERSION}/bin
+# # Install Gradle
+# ENV GRADLE_HOME=/opt/gradle
+# RUN mkdir $GRADLE_HOME \
+#     && curl -sL https://downloads.gradle-dn.com/distributions/gradle-${GRADLE_VERSION}-bin.zip -o gradle-${GRADLE_VERSION}-bin.zip \
+#     && unzip -d $GRADLE_HOME gradle-${GRADLE_VERSION}-bin.zip
+# ENV PATH=$PATH:/opt/gradle/gradle-${GRADLE_VERSION}/bin
 
 # Install Android SDK tools
 ENV ANDROID_HOME=/opt/android-sdk
