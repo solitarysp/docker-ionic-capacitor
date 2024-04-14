@@ -7,13 +7,13 @@
 <!-- ### Pull image
 
 Pull from Docker Registry:  
-`docker pull robingenz/ionic-capacitor` -->
+`docker pull lethanh9398/docker-ionic-capacitor-fastlane` -->
 
 ### Build image
 
 Build from GitHub:  
 ```
-docker build -t robingenz/ionic-capacitor github.com/robingenz/docker-ionic-capacitor
+docker build -t lethanh9398/docker-ionic-capacitor-fastlane .
 ```
 
 Available build arguments:  

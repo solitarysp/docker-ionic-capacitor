@@ -68,6 +68,8 @@ ENV PATH=$PATH:${HOME}/.npm-global/bin
 RUN npm install -g @ionic/cli@${IONIC_VERSION} \
     && npm install -g @capacitor/cli@${CAPACITOR_VERSION}
 
+RUN npm install -g yarn
+
 # Clean up
 RUN apt-get autoremove -y \
     && apt-get clean -y \
