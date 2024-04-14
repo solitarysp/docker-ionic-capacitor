@@ -70,6 +70,20 @@ RUN npm install -g @ionic/cli@${IONIC_VERSION} \
 
 RUN npm install -g yarn
 
+################################################################################################
+###
+### Install Ruby & bundler
+###
+RUN apt-get install -y ruby ruby-dev ruby-bundler build-essential
+################################################################################################
+###
+### Install Fastlane and plugins
+###
+
+RUN gem install fastlane -NV \
+  && gem install fastlane-plugin-appicon fastlane-plugin-android_change_string_app_name fastlane-plugin-humanable_build_number
+
+
 # Clean up
 RUN apt-get autoremove -y \
     && apt-get clean -y \
