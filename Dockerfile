@@ -7,9 +7,9 @@ ARG NODEJS_VERSION=16
 # See https://developer.android.com/studio/index.html#command-tools
 ARG ANDROID_SDK_VERSION=9477386
 # See https://androidsdkmanager.azurewebsites.net/Buildtools
-ARG ANDROID_BUILD_TOOLS_VERSION=33.0.0
+ARG ANDROID_BUILD_TOOLS_VERSION=33.0.2
 # See https://developer.android.com/studio/releases/platforms
-ARG ANDROID_PLATFORMS_VERSION=32
+ARG ANDROID_PLATFORMS_VERSION=33
 # See https://gradle.org/releases/
 # ARG GRADLE_VERSION=7.4.2
 # See https://www.npmjs.com/package/@ionic/cli
