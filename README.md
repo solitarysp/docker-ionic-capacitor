@@ -16,7 +16,7 @@ docker build -t lethanh9398/docker-ionic-capacitor-fastlane .
 ```
 Build with tag
 ```
-docker build -t lethanh9398/docker-ionic-capacitor-fastlane:v1.0.0 .
+docker build -t lethanh9398/docker-ionic-capacitor-fastlane:v1.0.1 .
 ```
 
 
@@ -27,6 +27,6 @@ docker login
 ```
 #### push
 ```
-docker push lethanh9398/docker-ionic-capacitor-fastlane:v1.0.0
+docker push lethanh9398/docker-ionic-capacitor-fastlane:v1.0.1
 ```
 
